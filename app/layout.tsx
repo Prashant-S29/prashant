@@ -8,13 +8,47 @@ import { GoogleAnalytics } from '@/components/analytics';
 
 // Providers
 import { Providers } from '@/utils/Providers';
+import { siteConfig } from '@/config/site';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
+// Metadata
 export const metadata: Metadata = {
-  title: "Code-Prashant v4 :: Prashant Singh's Portfolio",
-  description:
-    "It's all about the design and development process. The more you know about it, the better you'll be at it. I am Prashant Singh and this is v4 of my portfolio.",
+  title: {
+    template: `%s | ${siteConfig.name}`,
+    default: `${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    siteName: siteConfig.name,
+    url: '/',
+    locale: 'en_GB',
+    type: 'website',
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 675,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: siteConfig.twitterHandle,
+    title: `${siteConfig.name}`,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 675,
+      },
+    ],
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

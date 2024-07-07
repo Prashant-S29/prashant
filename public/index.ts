@@ -1,9 +1,8 @@
-import profileImageOne from './profileImageOne.png';
-import background from './background.png';
-import codeComponentsCardImage from './projects/code-components/cardImage.png';
-import icepadmCardImage from './projects/icepadm/cardImage.png';
+import profileImageOne from './profileImageOne.webp';
+import background from './background.webp';
 
-import prOne from './prOne.png';
-import prTwo from './prTwo.png';
+import codeComponentsCardImage from './projects/code-components/cardImage.webp';
+import icepadmCardImage from './projects/icepadm/cardImage.webp';
 
-export { profileImageOne, background, prOne, prTwo, codeComponentsCardImage, icepadmCardImage };
+
+export { profileImageOne, background, codeComponentsCardImage, icepadmCardImage };
