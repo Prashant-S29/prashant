@@ -10,7 +10,7 @@ const projectData: ProjectDataType[] = [
     title: 'Code Components',
     tagLine: 'A collection of reusable code components made with NextJs',
     tag: 'Development',
-    liveLink: 'https://icepadm-skit.vercel.app/',
+    liveLink: 'https://www.code-components.in/',
     sourceCodeLink: '',
     date: 'February 2023',
     category: 'Web Development and Design',

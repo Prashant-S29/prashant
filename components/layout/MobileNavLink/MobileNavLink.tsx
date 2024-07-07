@@ -27,29 +27,33 @@ export const MobileNavLink = ({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-      <Link href={link.comingSoon ? '#' : link.link} target={link.targetBlank ? '_blank' : '_self'}>
-        <div
-          className={`min-w-fit rounded-[5px] border px-2 py-[6px] duration-200 ${
-            pathName === link.link ? 'border-[#3c3c3c] bg-[#2a2a2a]' : 'border-[#1c1c1c] bg-[#1c1c1c]'
-          }`}
-        >
-          <div className='flex justify-center'>
-            <link.icon
-              className={`text-[16px] duration-200 ${
-                pathName === link.link || isHovered ? 'text-[#fff]' : 'text-[#858585]'
+    <>
+      {!link.comingSoon && (
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="relative">
+          <Link href={link.comingSoon ? '#' : link.link} target={link.targetBlank ? '_blank' : '_self'}>
+            <div
+              className={`min-w-fit rounded-[5px] border px-2 py-[6px] duration-200 ${
+                pathName === link.link ? 'border-[#3c3c3c] bg-[#2a2a2a]' : 'border-[#1c1c1c] bg-[#1c1c1c]'
               }`}
-            />
-          </div>
-          <div
-            className={`text-[11px] mt-[2px] font-medium duration-200 ${
-              pathName === link.link || isHovered ? 'text-[#fff]' : 'text-[#858585]'
-            }`}
-          >
-            {link.label}
-          </div>
+            >
+              <div className="flex justify-center">
+                <link.icon
+                  className={`text-[16px] duration-200 ${
+                    pathName === link.link || isHovered ? 'text-[#fff]' : 'text-[#858585]'
+                  }`}
+                />
+              </div>
+              <div
+                className={`mt-[2px] text-[11px] font-medium duration-200 ${
+                  pathName === link.link || isHovered ? 'text-[#fff]' : 'text-[#858585]'
+                }`}
+              >
+                {link.label}
+              </div>
+            </div>
+          </Link>
         </div>
-      </Link>
-    </div>
+      )}
+    </>
   );
 };

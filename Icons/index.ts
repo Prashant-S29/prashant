@@ -21,14 +21,14 @@ import { VscVscode as VSCodeIcon } from 'react-icons/vsc';
 import { SiZedindustries as ZedIcon } from 'react-icons/si';
 import { SiPostman as PostmanIcon } from 'react-icons/si';
 import { SiLighthouse as LighthouseIcon } from 'react-icons/si';
-import { TbBrandGraphql as OpenGraphIcon } from 'react-icons/tb';
+import { MdOutlineGraphicEq as OpenGraphIcon } from 'react-icons/md';
 import { SiAndroidstudio as AndroidStudioIcon } from 'react-icons/si';
 import { FaSlack as SlackIcon } from 'react-icons/fa';
 import { SiJira as JiraIcon } from 'react-icons/si';
 import { IoLogoVercel as VercelIcon } from 'react-icons/io5';
 import { FaAws as AWSIcon } from 'react-icons/fa';
 import { SiUpstash as UpstashIcon } from 'react-icons/si';
-import { FaGitAlt as GitIcon } from "react-icons/fa";
+import { FaGitAlt as GitIcon } from 'react-icons/fa';
 import { SiClerk as ClerkIcon } from 'react-icons/si';
 import { FaStripe as StripeIcon } from 'react-icons/fa6';
 import { SiNotion as NotionIcon } from 'react-icons/si';
@@ -39,6 +39,7 @@ import { BiLogoPostgresql as PostgreSQLIcon } from 'react-icons/bi';
 import { SiMongodb as MongoDBIcon } from 'react-icons/si';
 import { IoLogoNodejs as NodeJsIcon } from 'react-icons/io5';
 import { SiOpenai as ChatGPTIcon } from 'react-icons/si';
+import { BiDna as DNAIcon } from 'react-icons/bi';
 
 export {
   ExploreIcon,
@@ -82,4 +83,5 @@ export {
   MongoDBIcon,
   NodeJsIcon,
   ChatGPTIcon,
+  DNAIcon,
 };
