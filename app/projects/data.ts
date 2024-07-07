@@ -11,7 +11,7 @@ const projectData: ProjectDataType[] = [
     tagLine: 'A collection of reusable code components made with NextJs',
     tag: 'Development',
     liveLink: 'https://www.code-components.in/',
-    sourceCodeLink: '',
+    sourceCodeLink: 'https://github.com/Prashant-S29/code-components.git',
     date: 'February 2023',
     category: 'Web Development and Design',
     mainImage: CodeComponents_CardImage,

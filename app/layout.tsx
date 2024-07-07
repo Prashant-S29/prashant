@@ -4,6 +4,7 @@ import './globals.css';
 
 // Components
 import { Footer, MobileHeader, MobileNav, SideNav } from '@/components/layout';
+import { GoogleAnalytics } from '@/components/analytics';
 
 // Providers
 import { Providers } from '@/utils/Providers';
@@ -23,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID as string} />
       <body className={montserrat.className}>
         <Providers>
           <div className="block lg:hidden">

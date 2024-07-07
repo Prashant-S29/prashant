@@ -40,6 +40,8 @@ import { SiMongodb as MongoDBIcon } from 'react-icons/si';
 import { IoLogoNodejs as NodeJsIcon } from 'react-icons/io5';
 import { SiOpenai as ChatGPTIcon } from 'react-icons/si';
 import { BiDna as DNAIcon } from 'react-icons/bi';
+import { FaInstagram as InstagramIcon } from 'react-icons/fa';
+import { FaDribbble as DribbbleIcon } from 'react-icons/fa';
 
 export {
   ExploreIcon,
@@ -84,4 +86,6 @@ export {
   NodeJsIcon,
   ChatGPTIcon,
   DNAIcon,
+  InstagramIcon,
+  DribbbleIcon,
 };

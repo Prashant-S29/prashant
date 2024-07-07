@@ -14,6 +14,8 @@ import {
   GithubIcon,
   GithubRepoIcon,
   StackIcon,
+  InstagramIcon,
+  DribbbleIcon,
 } from '@/Icons';
 
 const SideNavData: SideNavDataType[] = [
@@ -95,6 +97,17 @@ const SideNavData: SideNavDataType[] = [
         icon: GithubIcon,
         label: 'GitHub',
         link: 'https://github.com/Prashant-S29',
+        targetBlank: true,
+      },
+      {
+        icon: InstagramIcon,
+        label: 'Instagram',
+        link: 'https://www.instagram.com/web_with_prashant',
+        targetBlank: true,
+      }, {
+        icon: DribbbleIcon,
+        label: 'Dribbble',
+        link: 'https://dribbble.com/Code-Prashant',
         targetBlank: true,
       },
     ],
