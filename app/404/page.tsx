@@ -18,7 +18,10 @@ const NotFound = () => {
               <span className="text-[12px] font-semibold text-[#858585]">Page Not Found</span>
             </div>
             <div className="mt-5">
-              <Link href="/" className="text-[13px] sm:text-[15px] font-semibold text-[#FFF] underline underline-offset-2">
+              <Link
+                href="/"
+                className="text-[13px] font-semibold text-[#FFF] underline underline-offset-2 sm:text-[15px]"
+              >
                 Back to Home
               </Link>
             </div>

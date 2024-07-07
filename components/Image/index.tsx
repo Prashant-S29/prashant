@@ -1,2 +1,2 @@
-export * from "./Image";
-export * from "./FallbackImage";
+export * from './Image';
+export * from './FallbackImage';

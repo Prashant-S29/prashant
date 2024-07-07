@@ -14,7 +14,7 @@ export const ReposPage = () => {
       <div>
         <span className="text-[22px] font-bold text-[#ffffff] sm:text-[26px] lg:text-[30px]">Repos</span>
       </div>
-      <div className='leading-tight'>
+      <div className="leading-tight">
         <span className="text-[14px] text-[#858585] sm:text-[16px] lg:text-[18px]">
           My contributions and open posts on Github.
         </span>

@@ -9,8 +9,8 @@ export const ArticleCard = ({ data }: { data: ArticleDataType }) => {
     <div>
       <Link href={data.link} target="_blank">
         <div className="flex w-full items-center gap-2 rounded-lg bg-[#161616] py-2 duration-200 hover:bg-[#1c1c1c] sm:p-3">
-          <div className="h-[40px] min-w-[40px] rounded-[5px] bg-[#242424] flex justify-center items-center">
-            <data.icon className='text-white text-[20px]' />
+          <div className="flex h-[40px] min-w-[40px] items-center justify-center rounded-[5px] bg-[#242424]">
+            <data.icon className="text-[20px] text-white" />
           </div>
           <div className="leading-tight">
             <div>

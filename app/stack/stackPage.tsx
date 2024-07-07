@@ -21,7 +21,7 @@ export const StackPage = () => {
         {stackData.map((data, index) => (
           <div key={index} className="mt-5 rounded-lg border border-[#242424] px-5 py-4">
             <div>
-              <span className="text-[15px] sm:text-[16px] font-semibold text-white">{data.category}</span>
+              <span className="text-[15px] font-semibold text-white sm:text-[16px]">{data.category}</span>
             </div>
             <div className="mt-2 flex w-full grid-cols-2 flex-col gap-x-2 sm:grid">
               {data.tools.map((toolsData, index) => (

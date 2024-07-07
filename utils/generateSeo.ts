@@ -1,5 +1,5 @@
-import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { Metadata } from 'next';
+import { siteConfig } from '@/config/site';
 
 interface Props {
   title: string;
@@ -8,12 +8,7 @@ interface Props {
   image?: string;
 }
 
-export const generateSeo = ({
-  title,
-  description,
-  url,
-  image,
-}: Props): Metadata => ({
+export const generateSeo = ({ title, description, url, image }: Props): Metadata => ({
   title,
   description,
   metadataBase: new URL(siteConfig.url),
@@ -22,8 +17,8 @@ export const generateSeo = ({
     description,
     siteName: siteConfig.name,
     url,
-    locale: "en_GB",
-    type: "website",
+    locale: 'en_GB',
+    type: 'website',
     images: [
       {
         url: image ? image : siteConfig.ogImage,
@@ -33,7 +28,7 @@ export const generateSeo = ({
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     creator: siteConfig.twitterHandle,
     title,
     description,
