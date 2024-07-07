@@ -40,19 +40,14 @@ const FooterData: FooterDataType[] = [
         link: '/',
       },
       {
-        label: 'Github Repositories',
-        link: '/github-repo',
+        label: 'Repos',
+        link: '/repos',
       },
     ],
   },
   {
     category: 'Connect',
     links: [
-      {
-        label: 'Contact',
-        link: '/contact',
-      
-      },
       {
         label: 'X (Twitter)',
         link: 'https://twitter.com/httpsPrashant',
