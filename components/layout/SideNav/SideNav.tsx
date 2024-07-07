@@ -7,7 +7,12 @@ import { SideNavData } from './data';
 
 // Hooks
 import useKeyBinder from '@/hooks/useKeyBinder';
+
+// Components
 import { SideNavLink } from '../SideNavLink';
+
+// Assets
+import { profileImageOne } from '@/public';
 
 export const SideNav = () => {
   //   Extract key and url from data
@@ -37,9 +42,12 @@ export const SideNav = () => {
   useKeyBinder({ keys: keyBindings });
 
   return (
-    <div className="h-screen overflow-y-scroll min-w-[300px] border-r border-[#242424] bg-[#1c1c1c] p-5">
+    <div className="h-screen min-w-[300px] overflow-y-scroll border-r border-[#242424] bg-[#1c1c1c] p-5">
       <div className="flex items-center gap-2">
-        <div className="size-[40px] rounded-full bg-[#858585]" />
+        <div
+          className="size-[40px] rounded-full bg-[#858585] bg-cover bg-no-repeat"
+          style={{ backgroundImage: `url(${profileImageOne.src})` }}
+        />
         <div className="leading-tight">
           <div>
             <span className="text-[13px] font-semibold text-white">Prashant Singh</span>
@@ -57,7 +65,7 @@ export const SideNav = () => {
             </div>
             <div className="mt-2">
               {data.links.map((link, index) => (
-                <SideNavLink key={index} link={link}  />
+                <SideNavLink key={index} link={link} />
               ))}
             </div>
           </div>

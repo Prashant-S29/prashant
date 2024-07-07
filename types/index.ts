@@ -51,3 +51,10 @@ export type StackDataType = {
     desc: string;
   }[];
 };
+
+export type ArticleDataType = {
+  title: string;
+  desc: string;
+  link: string;
+  icon: IconType;
+};

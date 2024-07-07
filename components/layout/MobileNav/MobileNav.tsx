@@ -1,6 +1,5 @@
 'use client';
 
-import { ExploreIcon } from '@/Icons';
 import React from 'react';
 import { SideNavData } from '../SideNav/data';
 import { MobileNavLink } from '../MobileNavLink';

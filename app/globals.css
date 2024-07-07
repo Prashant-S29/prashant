@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 50px;
 }
 
 .loaderCard {
@@ -15,6 +16,8 @@ html {
   background-size: 600% 600%;
   animation: loader 1.5s infinite;
 }
+
+
 
 @keyframes loader {
   0% {

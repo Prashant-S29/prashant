@@ -96,14 +96,22 @@ export const Footer = () => {
       </div>
       <div className="my-[30px] block h-[0.5px] w-full bg-[#242424] md:hidden" />
       <div>
-        <ul className="flex flex-col gap-3 md:gap-7 md:flex-row">
+        <ul className="flex flex-col gap-3 md:flex-row md:gap-7">
           <li>
-            <Link href="" className="flex items-center gap-2 text-[14px] font-medium text-[#858585]">
+            <Link
+              href="https://github.com/Prashant-S29/prashant.git"
+              target="_blank"
+              className="flex items-center gap-2 text-[14px] font-medium text-[#858585]"
+            >
               Source Code <RightArrowIcon />
             </Link>
           </li>
           <li>
-            <Link href="" className="flex items-center gap-2 text-[14px] font-medium text-[#858585]">
+            <Link
+              href="https://github.com/Prashant-S29/Code-Prashant.git"
+              target="_blank"
+              className="flex items-center gap-2 text-[14px] font-medium text-[#858585]"
+            >
               Porfolio v3 (2023) <RightArrowIcon />
             </Link>
           </li>
@@ -118,7 +126,7 @@ export const Footer = () => {
       <div className="mt-3 leading-tight">
         <span className="text-[14px] font-medium text-[#858585]">
           This website is completely open source on{' '}
-          <Link href="https://github.com/Prashant-S29/portfolio_v4" className="font-bold">
+          <Link href="https://github.com/Prashant-S29/prashant.git" className="font-bold">
             GitHub
           </Link>
         </span>

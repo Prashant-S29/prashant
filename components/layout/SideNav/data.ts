@@ -70,9 +70,9 @@ const SideNavData: SideNavDataType[] = [
       {
         icon: ArticleIcon,
         label: 'Articles',
-        link: '/data',
+        link: '/#articles',
         targetBlank: false,
-        comingSoon: true,
+        keyBinding: '6',
       },
     ],
   },

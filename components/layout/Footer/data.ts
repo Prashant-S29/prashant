@@ -17,23 +17,19 @@ const FooterData: FooterDataType[] = [
         label: 'Projects',
         link: '/projects',
       },
-      {
-        label: 'Services',
-        link: '/services',
-      },
     ],
   },
   {
-    category: 'Projects',
+    category: 'Inspiration',
     links: [
       {
-        label: 'Web Design',
-        link: '/',
+        label: 'Dribbble',
+        link: 'https://dribbble.com/Code-Prashant',
       },
       {
-        label: 'Web Development',
-        link: '/about',
-      },
+        label: 'Instagram',
+        link: 'https://www.instagram.com/web_with_prashant',
+      }
     ],
   },
   {

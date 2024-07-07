@@ -46,7 +46,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
   }, [params.project_id, router]);
 
   return (
-    <div className="min-h-screen w-full bg-[#161616] px-[170px] py-[100px] md:px-[210px] lg:px-[250px] xl:px-[300px]">
+    <div className="min-h-screen w-full bg-[#161616] p-5 md:px-[100px] lg:px-[120px] xl:px-[300px]">
       {data && (
         <div>
           <div>
@@ -59,7 +59,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
           </div>
 
           <div className="mt-5">
-            <span className="text-[30px] font-semibold capitalize text-white">{data?.title}</span>
+            <span className="text-[22px] sm:text-[26px] lg:text-[30px] font-bold text-[#ffffff] capitalize">{data?.title}</span>
           </div>
           <div className="mt-2">
             <span className="text-[13px] font-medium text-[#858585]">
@@ -86,7 +86,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
           )}
 
           <div
-            className="mt-5 flex h-[350px] w-full items-center justify-center rounded-lg border border-[#242424] bg-[#1c1c1c] bg-cover bg-no-repeat"
+            className="mt-5 flex max-[400px]:h-full h-[280px] sm:h-[350px] w-full items-center justify-center rounded-lg border border-[#242424] bg-[#1c1c1c] bg-cover bg-no-repeat"
             style={{ backgroundImage: `url(${background.src})` }}
           >
             <Image
@@ -97,7 +97,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
               className="z-[10] h-full w-[90%] object-cover"
             />
           </div>
-          <div className="p-[40px] leading-snug">
+          <div className="p-0 pt-5 sm:p-[40px] leading-snug">
             <div>
               <span className="text-[14px] text-[#858585]">
                 <span className="font-semibold">Background: </span> {data?.background}
@@ -105,7 +105,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
             </div>
             <div className="mt-5">
               <div>
-                <span className="text-[20px] font-semibold capitalize text-white">Challenges</span>
+                <span className="text-[18px] sm:text-[20px] font-semibold capitalize text-white">Challenges</span>
               </div>
               <div className="mt-2">
                 <ul className="list-decimal space-y-2 pl-5 text-[14px] text-[#858585]">
@@ -115,7 +115,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
             </div>
             <div className="mt-5">
               <div>
-                <span className="text-[20px] font-semibold capitalize text-white">Solutions</span>
+                <span className="text-[18px] sm:text-[20px] font-semibold capitalize text-white">Solutions</span>
               </div>
               <div className="mt-2">
                 <ul className="list-decimal space-y-2 pl-5 text-[14px] text-[#858585]">
@@ -130,7 +130,7 @@ const Project = ({ params }: { params: { project_id: string } }) => {
             </div>
             <div className="mt-5">
               <div>
-                <span className="text-[20px] font-semibold capitalize text-white">Outcome</span>
+                <span className="text-[18px] sm:text-[20px] font-semibold capitalize text-white">Outcome</span>
               </div>
               <div className="mt-2">
                 <span className="text-[14px] text-[#858585]">{data?.outcome}</span>
@@ -143,8 +143,8 @@ const Project = ({ params }: { params: { project_id: string } }) => {
               <div className="h-[200px] w-full rounded-lg border border-[#242424] bg-[#1c1c1c]"></div>
             </div> */}
             {nextProjectData && (
-              <div className="mt-[50px] pr-[100px]">
-                <span className="text-[20px] font-semibold capitalize text-white">Next Project</span>
+              <div className="mt-[50px] sm:pr-[100px]">
+                <span className="text-[18px] sm:text-[20px] font-semibold capitalize text-white">Next Project</span>
                 <div className="mt-3">
                   <ProjectCard projectData={nextProjectData} />
                 </div>
