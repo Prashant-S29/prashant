@@ -24,13 +24,22 @@ export const ProjectCard = ({
     >
       <Link href={`/projects/${projectData.id}`}>
         <div className="rounded-lg border border-[#242424] bg-[#1c1c1c]">
-          <div className="relative flex h-[200px] xl:h-[250px] w-full items-center justify-center rounded-t-lg bg-[#1c1c1c]">
+          <div className="relative flex h-[200px] w-full items-center justify-center rounded-t-lg bg-[#1c1c1c] xl:h-[250px]">
             <div className="relative flex h-full w-full justify-center rounded-lg border border-[#242424] bg-[#2c2c2c] bg-cover bg-no-repeat">
-              <Image src={background} alt="Background" priority className="absolute h-full w-full object-cover rounded-t-lg" />
+              <Image
+                src={background}
+                width={300}
+                height={200}
+                alt="Background"
+                priority
+                className="absolute h-full w-full rounded-t-lg object-cover"
+              />
               <Image
                 src={projectData.mainImage}
                 alt={projectData.title}
                 unoptimized
+                width={300}
+                height={200}
                 priority
                 className="relative z-[10] h-full w-[90%] object-cover"
               />
