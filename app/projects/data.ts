@@ -1,8 +1,8 @@
 // Types
+import { codeComponentsCardImage, icepadmCardImage } from '@/public';
 import { ProjectDataType } from '@/types';
 
 // Assets
-import { CodeComponents_CardImage, ICEPADM_CardImage } from '@/public/projects';
 
 const projectData: ProjectDataType[] = [
   {
@@ -14,7 +14,7 @@ const projectData: ProjectDataType[] = [
     sourceCodeLink: 'https://github.com/Prashant-S29/code-components.git',
     date: 'February 2023',
     category: 'Web Development and Design',
-    mainImage: CodeComponents_CardImage,
+    mainImage: codeComponentsCardImage,
     images: ['1', '2', '3', '4'],
     background:
       "It's all started when I was scrolling through Awwwards website submissions. There I found lots of amazing websites using fabulous design components. I thought it'd be a great idea to create a collection of these components and share it with the community. I've been working on this project for a while now and I'm excited to share it with you all.",
@@ -50,7 +50,7 @@ const projectData: ProjectDataType[] = [
     sourceCodeLink: 'https://github.com/Prashant-S29/icepadm-skit',
     date: 'February 2023',
     category: 'Web Development and Design',
-    mainImage: ICEPADM_CardImage,
+    mainImage: icepadmCardImage,
     images: ['1', '2', '3', '4'],
     background:
       'ICEPADM is an initiative of SKIT College, Jaipur, Rajasthan to promote environmental awareness among society. Every year they host a series of events to promote environmental awareness via online meetups, seminars, workshops, and more. They approached me to redevelop their old website and provide it a new look',

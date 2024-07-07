@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 // Icons
 import { LeftArrowIcon, RightArrowIcon } from '@/Icons';
@@ -20,7 +22,7 @@ import { ProjectDataType } from '@/types';
 import { background } from '@/public';
 
 // Components
-import { Link } from '@/components/Link';
+// import { Link } from '@/components/Link';
 
 const Project = ({ params }: { params: { project_id: string } }) => {
   const router = useRouter();
@@ -31,13 +33,12 @@ const Project = ({ params }: { params: { project_id: string } }) => {
   // Getting the project data using the project id
   useEffect(() => {
     const getData = () => {
-      console.log('hiii. this is project page');
-
       const data = projectData.find((data) => data.id === params.project_id);
       if (!data) {
         router.push('/404');
       }
       setData(data);
+      
       // determine the next project index
       const currentIndex = projectData.findIndex((data) => data.id === params.project_id);
       const nextProjectIndex = currentIndex >= projectData.length - 1 ? 0 : currentIndex + 1;

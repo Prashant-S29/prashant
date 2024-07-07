@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Types
 import { ProjectDataType } from '@/types';
@@ -8,7 +9,7 @@ import { ProjectDataType } from '@/types';
 import { background } from '@/public';
 
 // Components
-import { Link } from '@/components/Link';
+// import { Link } from '@/components/Link';
 
 export const ProjectCard = ({
   projectData,
