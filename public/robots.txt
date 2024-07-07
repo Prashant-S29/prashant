@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://prashant-bay.vercel.app/
+
+# Sitemaps
+Sitemap: https://prashant-bay.vercel.app/sitemap.xml

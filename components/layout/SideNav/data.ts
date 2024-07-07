@@ -104,7 +104,8 @@ const SideNavData: SideNavDataType[] = [
         label: 'Instagram',
         link: 'https://www.instagram.com/web_with_prashant',
         targetBlank: true,
-      }, {
+      },
+      {
         icon: DribbbleIcon,
         label: 'Dribbble',
         link: 'https://dribbble.com/Code-Prashant',

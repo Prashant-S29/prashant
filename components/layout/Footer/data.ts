@@ -29,7 +29,7 @@ const FooterData: FooterDataType[] = [
       {
         label: 'Instagram',
         link: 'https://www.instagram.com/web_with_prashant',
-      }
+      },
     ],
   },
   {

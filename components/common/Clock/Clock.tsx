@@ -8,7 +8,7 @@ export const Clock = () => {
 
   return (
     <div>
-      <span className="text-[40px] md:text-[50px] font-semibold text-[#858585]">
+      <span className="text-[40px] font-semibold text-[#858585] md:text-[50px]">
         {hr}:{min} {meridian}
       </span>
     </div>
