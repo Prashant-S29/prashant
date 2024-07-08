@@ -9,6 +9,7 @@ import { RightArrowIcon } from '@/Icons';
 // Components
 import { Clock } from '@/components/common';
 import { Link } from '@/components/Link';
+import { CurrentStatus } from '@/components/Features';
 
 export const Footer = () => {
   return (
@@ -35,17 +36,7 @@ export const Footer = () => {
       </div>
       <div className="my-[30px] hidden h-[0.5px] w-full bg-[#242424] md:block" />
       <div className="w-full items-center justify-between leading-tight md:flex">
-        <div>
-          <div className="flex items-center gap-2">
-            <div className="size-[5px] rounded-full bg-[#1aff57] shadow-[0_0_5px_2px_rgba(26,255,87)]" />
-            <span className="text-[13px] font-medium text-white">Currently Working</span>
-          </div>
-          <div>
-            <Link href="/contact" className="text-[13px] text-[#858585] duration-200 hover:text-white">
-              Reach out &rarr;
-            </Link>
-          </div>
-        </div>
+        <CurrentStatus />
         <div className="mt-5 md:mt-0">
           {/* <span className="text-[50px] font-semibold text-[#858585]">01:26 AM</span> */}
           <Clock />
