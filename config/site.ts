@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   description:
     "It's all about the design and development process. The more you know about it, the better you'll be at it. I am Prashant Singh and this is v4 of my portfolio.",
   url: 'https://prashant-bay.vercel.app/',
-  ogImage: 'https://postimg.cc/s14gZsWJ',
+  ogImage: 'https://res.cloudinary.com/dzfsxpblt/image/upload/v1720420852/p5rl5o5c7avgjaxsmjs4.png',
   twitterHandle: '@httpsPrashant',
   links: {
     twitter: 'https://twitter.com/httpsPrashant',
