@@ -10,7 +10,7 @@ export const Articles = () => {
       </div>
       <div className="leading-tight sm:leading-normal">
         <span className="text-[14px] font-medium text-[#858585]">
-          Sharing my learnings and experiences on Design and Tech and more.
+          Sharing my learnings and experiences on Design, Tech and more.
         </span>
       </div>
       <div className="mt-5 flex w-full grid-cols-2 flex-col gap-x-2 sm:grid">

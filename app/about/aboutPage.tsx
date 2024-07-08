@@ -6,18 +6,19 @@ import {
   LinkedInIcon,
   GithubIcon,
   EmailIcon,
-  RightArrowIcon,
   ProjectIcon,
   StackIcon,
   ArticleIcon,
 } from '@/Icons';
 
+// Assets
+import { profileImageOne } from '@/public';
+
 // Components
 import { CTACard } from '@/components/common';
 import { Link } from '@/components/Link';
 
-// Assets
-import { profileImageOne } from '@/public';
+import { CurrentStatus } from '@/components/Features';
 
 export const AboutPage = () => {
   return (
@@ -41,18 +42,7 @@ export const AboutPage = () => {
             </span>
           </div>
           <div className="mt-5">
-            <div className="flex items-center gap-2">
-              <div className="size-[5px] rounded-full bg-[#1aff57] shadow-[0_0_5px_2px_rgba(26,255,87)]" />
-              <span className="text-[13px] font-medium text-white">Currently Working</span>
-            </div>
-            <div>
-              <Link
-                href="/contact"
-                className="flex w-fit items-center gap-2 text-[13px] text-[#858585] duration-200 hover:text-white"
-              >
-                Reach out <RightArrowIcon />
-              </Link>
-            </div>
+            <CurrentStatus />
           </div>
           <div className="mt-5 grid w-full grid-cols-4 gap-2">
             <Link href="/" className="w-fit">

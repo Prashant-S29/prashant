@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 // Components
 import { CopyEmailButton } from '../CopyEmailButton';
@@ -24,9 +25,12 @@ export const Hero = () => {
       </div>
       <div className="mt-5 flex items-center gap-5">
         <div>
-          <button className="rounded-[5px] border border-[#242424] bg-[#1c1c1c] px-5 py-2 text-[14px] font-medium text-[#ffffff]">
+          <Link
+            href="/about"
+            className="rounded-[5px] border border-[#242424] bg-[#1c1c1c] px-5 py-2 text-[14px] font-medium text-[#ffffff]"
+          >
             About
-          </button>
+          </Link>
         </div>
         <div>
           <CopyEmailButton />
