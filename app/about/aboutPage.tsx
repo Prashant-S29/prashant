@@ -69,7 +69,7 @@ export const AboutPage = () => {
           data={{
             title: 'Projects',
             description: 'All Projects related to web designing and development',
-            href: '/',
+            href: '/projects',
             text: 'View Projects',
             icon: ProjectIcon,
           }}
@@ -87,7 +87,7 @@ export const AboutPage = () => {
           data={{
             title: 'Stack',
             description: 'Sofware and Tech I use daily',
-            href: '/about',
+            href: '/stack',
             text: 'Learn More',
             icon: StackIcon,
           }}
