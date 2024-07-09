@@ -15,6 +15,10 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 // Vercel Analytics
 import { Analytics } from "@vercel/analytics/react"
 
+// Vercel Speed Insights
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+
 // Metadata
 export const metadata: Metadata = {
   title: {
@@ -81,6 +85,7 @@ export default function RootLayout({
             </div>
           </div>
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
