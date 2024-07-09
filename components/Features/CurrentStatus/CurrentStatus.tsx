@@ -9,8 +9,8 @@ export const CurrentStatus = () => {
   const { hr, meridian } = useClock();
 
   useEffect(() => {
-    // Convert hr to 24 hrs format using hr and meridian
-    // set online if hr is between 10 and 22 and meridian is AM
+    // Convert 12 hrs to 24 hrs format using hr and meridian
+    // set online if hr is between 10 and 22 
     // else set offline
 
     const handleStatus = () => {

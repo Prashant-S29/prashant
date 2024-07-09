@@ -12,6 +12,9 @@ import { siteConfig } from '@/config/site';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
+// Vercel Analytics
+import { Analytics } from "@vercel/analytics/react"
+
 // Metadata
 export const metadata: Metadata = {
   title: {
@@ -59,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID as string} />
+      <Analytics />
       <body className={montserrat.className}>
         <Providers>
           <div className="block lg:hidden">
