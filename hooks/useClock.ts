@@ -13,11 +13,11 @@ const formatTime = (date: Date) => ({
   hours: converTo12Hrs(date.getHours()).toString().padStart(2, '0'),
   minutes: String(date.getMinutes()).padStart(2, '0'),
   seconds: String(date.getSeconds()).padStart(2, '0'),
-  meridian: date.getHours() > 12 ? 'PM' : 'AM',
+  meridian: date.getHours() >= 12 ? 'PM' : 'AM',
 });
 
 const useClock = () => {
-  const [currentTime, setCurrentTime] = useState({ hr: '00', min: '00', sec: '00', meridian: 'AM' });
+  const [currentTime, setCurrentTime] = useState({ hr: '00', min: '00', sec: '00', meridian: '-' });
 
   useEffect(() => {
     const intervalId = setInterval(() => {
