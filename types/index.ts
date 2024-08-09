@@ -22,14 +22,17 @@ export type FooterDataType = {
   }[];
 };
 
+export type FilterOption = 'All' | 'Development' | 'Design';
+
 export type ProjectDataType = {
   id: string;
   title: string;
   tagLine: string;
-  tag: 'Design' | 'Development';
+  tag: Exclude<FilterOption, 'All'>; // Exclude 'All'. Includes rest of the options from FilterOption
   liveLink: string;
   sourceCodeLink?: string;
   date: string;
+  status: 'Completed' | 'Ongoing';
   category: string;
   mainImage: StaticImageData;
   images: string[];

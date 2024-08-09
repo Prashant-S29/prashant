@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://prashant-bay.vercel.app/',
+  siteUrl: 'https://prashantsingh.in/',
   generateRobotsTxt: true,
   exclude: ['/api*'],
 };
