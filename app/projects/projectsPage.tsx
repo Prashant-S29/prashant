@@ -6,10 +6,11 @@ import React, { useState } from 'react';
 import { ProjectCard } from '@/components/common';
 
 // Data
-import { projectData } from './data';
+import { filterOptions, projectData } from './data';
+import { FilterOption } from '@/types';
 
 export const ProjectsPage = () => {
-  const [filterBy, setFilterBy] = useState<'all' | 'development' | 'design'>('all');
+  const [filterBy, setFilterBy] = useState<FilterOption>('All');
 
   return (
     <div className="min-h-screen w-full bg-[#161616] p-5 lg:px-[80px] lg:py-[70px] xl:px-[150px] xl:py-[100px]">
@@ -22,35 +23,25 @@ export const ProjectsPage = () => {
         </span>
       </div>
       <div className="mt-5 flex items-center gap-3">
-        <div className="cursor-pointer" onClick={() => setFilterBy('all')}>
-          <span
-            className="rounded-md border bg-[#1c1c1c] px-3 py-1 text-[13px] font-medium text-[#858585] duration-200"
-            style={{ borderColor: filterBy === 'all' ? '#3c3c3c' : '#242424' }}
-          >
-            All
-          </span>
-        </div>
-        <div className="cursor-pointer" onClick={() => setFilterBy('development')}>
-          <span
-            className="rounded-md border border-[#242424] bg-[#1c1c1c] px-3 py-1 text-[13px] font-medium text-[#858585] duration-200"
-            style={{ borderColor: filterBy === 'development' ? '#3c3c3c' : '#242424' }}
-          >
-            Development
-          </span>
-        </div>
-        <div className="cursor-pointer" onClick={() => setFilterBy('design')}>
-          <span
-            className="rounded-md border border-[#242424] bg-[#1c1c1c] px-3 py-1 text-[13px] font-medium text-[#858585] duration-200"
-            style={{ borderColor: filterBy === 'design' ? '#3c3c3c' : '#242424' }}
-          >
-            Design
-          </span>
-        </div>
+        {filterOptions.map((option, index) => (
+          <div key={index} className="cursor-pointer" onClick={() => setFilterBy(option)}>
+            <span
+              className="rounded-md border bg-[#1c1c1c] px-3 py-1 text-[13px] font-medium text-[#858585] duration-200"
+              style={{ borderColor: filterBy === option ? '#3c3c3c' : '#242424' }}
+            >
+              {option.charAt(0).toUpperCase() + option.slice(1)}
+            </span>
+          </div>
+        ))}
       </div>
       <div className="mt-5 flex w-full grid-cols-2 flex-col gap-5 sm:grid sm:gap-2">
-        {projectData.map((data, index) => (
-          <ProjectCard key={index} projectData={data} filterBy={filterBy} />
-        ))}
+        {/* .slice().reverse() is used to reverse the order of the projects */}
+        {projectData
+          .slice()
+          .reverse()
+          .map((data, index) => (
+            <ProjectCard key={index} projectData={data} filterBy={filterBy} />
+          ))}
       </div>
     </div>
   );

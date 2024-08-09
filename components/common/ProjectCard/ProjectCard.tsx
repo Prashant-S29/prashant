@@ -3,26 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Types
-import { ProjectDataType } from '@/types';
+import { FilterOption, ProjectDataType } from '@/types';
 
 // Assets
 import { background } from '@/public';
 
-// Components
-// import { Link } from '@/components/Link';
-
-export const ProjectCard = ({
-  projectData,
-  filterBy,
-}: {
-  projectData: ProjectDataType;
-  filterBy?: 'all' | 'development' | 'design';
-}) => {
+export const ProjectCard = ({ projectData, filterBy }: { projectData: ProjectDataType; filterBy?: FilterOption }) => {
   return (
     <div
-      className={`${filterBy === 'all' || filterBy === projectData.tag.toLowerCase() || filterBy === undefined ? 'block' : 'hidden'} duration-200`}
+      className={`${filterBy === 'All' || filterBy?.toLowerCase() === projectData.tag.toLowerCase() || filterBy === undefined ? 'block' : 'hidden'} duration-200`}
     >
-      <Link href={`/projects/${projectData.id}`}>
+      <Link
+        href={projectData.status === 'Ongoing' ? '' : `/projects/${projectData.id}`}
+        // aria-disabled={projectData.status === 'Ongoing'}
+      >
         <div className="rounded-lg border border-[#242424] bg-[#1c1c1c]">
           <div className="relative flex h-[200px] w-full items-center justify-center rounded-t-lg bg-[#1c1c1c] xl:h-[250px]">
             <div className="relative flex h-full w-full justify-center rounded-lg border border-[#242424] bg-[#2c2c2c] bg-cover bg-no-repeat">
@@ -45,7 +39,13 @@ export const ProjectCard = ({
               />
             </div>
           </div>
-          <div className="border-t border-[#242424] px-3 py-2 leading-tight sm:leading-normal">
+          <div className="relative border-t border-[#242424] px-3 py-2 leading-tight sm:leading-normal">
+            {projectData.status === 'Ongoing' && (
+              <div className="absolute right-0 top-0 m-1 mr-2">
+                <span className="text-[11px] text-[#858585]">Ongoing</span>
+              </div>
+            )}
+
             <div>
               <span className="text-[14px] font-medium text-[#ffffff]">{projectData.title}</span>
             </div>
