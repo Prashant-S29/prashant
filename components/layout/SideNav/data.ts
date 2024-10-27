@@ -90,7 +90,7 @@ const SideNavData: SideNavDataType[] = [
       {
         icon: LinkedInIcon,
         label: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/prashant-singh-529391250/',
+        link: 'https://www.linkedin.com/in/prashantsingh29',
         targetBlank: true,
       },
       {
@@ -102,7 +102,7 @@ const SideNavData: SideNavDataType[] = [
       {
         icon: InstagramIcon,
         label: 'Instagram',
-        link: 'https://www.instagram.com/web_with_prashant',
+        link: 'https://www.instagram.com/prashant_gigs',
         targetBlank: true,
       },
       {
