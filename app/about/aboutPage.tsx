@@ -1,15 +1,7 @@
 import React from 'react';
 
 // Icons
-import {
-  TwitterIcon,
-  LinkedInIcon,
-  GithubIcon,
-  EmailIcon,
-  ProjectIcon,
-  StackIcon,
-  ArticleIcon,
-} from '@/Icons';
+import { TwitterIcon, LinkedInIcon, GithubIcon, EmailIcon, ProjectIcon, StackIcon, ArticleIcon } from '@/Icons';
 
 // Assets
 import { profileImageOne } from '@/public';
@@ -45,16 +37,16 @@ export const AboutPage = () => {
             <CurrentStatus />
           </div>
           <div className="mt-5 grid w-full grid-cols-4 gap-2">
-            <Link href="/" className="w-fit">
+            <Link href="https://github.com/prashant-s29" target="_blank" className="w-fit">
               <GithubIcon className="text-[24px] text-[#858585]" />
             </Link>
-            <Link href="/" className="w-fit">
+            <Link href="https://www.linkedin.com/in/prashantsingh29" target="_blank" className="w-fit">
               <LinkedInIcon className="text-[24px] text-[#858585]" />
             </Link>
-            <Link href="/" className="w-fit">
+            <Link href="https://x.com/httpsPrashant" target="_blank" className="w-fit">
               <TwitterIcon className="text-[24px] text-[#858585]" />
             </Link>
-            <Link href="/" className="w-fit">
+            <Link href="mailto:prashant.s2922@gmail.com" className="w-fit">
               <EmailIcon className="text-[24px] text-[#858585]" />
             </Link>
           </div>
@@ -99,7 +91,7 @@ export const AboutPage = () => {
             href: '/articles',
             text: 'Read All',
             icon: ArticleIcon,
-            comingSoon: true,
+            // comingSoon: true,
           }}
         />
       </div>
