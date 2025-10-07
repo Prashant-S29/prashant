@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant's Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .header {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #d0d0d0;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+
+      .btn {
+        background-color: transparent;
+        border: 1px solid #555;
+        color: #e0e0e0;
+        padding: 20px 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+      }
+
+      .btn-title {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 4px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      .btn-subtitle {
+        display: block;
+        font-size: 0.85rem;
+        color: #999;
+        line-height: 1.4;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 40px;
+        border-top: 1px solid #444;
+      }
+
+      .footer a {
+        color: #999;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+      }
+
+      .footer a:hover {
+        color: #e0e0e0;
+      }
+
+      .theme-toggle {
+        background: none;
+        border: none;
+        color: #999;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      .theme-toggle:hover {
+        color: #e0e0e0;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .btn-link {
+        color: #7dd3fc;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: color 0.3s ease;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 480px) {
+        .header h1 {
+          font-size: 1rem;
+        }
+
+        .btn {
+          padding: 22px 24px;
+        }
+
+        .footer {
+          gap: 20px;
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and
+          building cool things.
+        </h1>
+      </div>
+
+      <div class="buttons">
+        <h1 class="title">Currently working with</h1>
+        <div class="btn">
+          <span class="btn-subtitle">404</span>
+        </div>
+
+        <div style="margin-top: 10px"></div>
+        <h1 class="title">Past Experience</h1>
+        <div class="btn">
+          <span class="btn-title">Software Engineer - CodeDecoders</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Ahmedabad, Gujrat, India (On-Site) | July 2025 - September
+            2025</span
+          >
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Worked as a Full Stack Typescript developer for a Fintech Startup.
+            Worked alongside the CTO to develop the Web3 based Global Payment
+            System. Got handson experience on FIAT to crypto conversions,
+            transactions and more.</span
+          >
+
+          <a href="https://codedecoders.io" target="_blank" class="btn-link"
+            >https://codedecoders.io</a
+          >
+        </div>
+        <div class="btn">
+          <span class="btn-title">Full Stack Web Developer - SinonTechs</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Ahmedabad, Gujrat, India (On-Site) | Mar 2025 - July 2025</span
+          >
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Developed full stack web applications for international clients
+            using T3 Stack and AWS services. Engaged in client communication to
+            deliver high-impact and scalable web solutions tailored to business
+            goals. Integrated analytics and campaign systems using PostHog and
+            custom CMS platforms.</span
+          >
+
+          <a href="https://www.sinontechs.com" target="_blank" class="btn-link"
+            >https://www.sinontechs.com</a
+          >
+        </div>
+
+        <div class="btn">
+          <span class="btn-title">Associate Software Intern - Brudite</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Jaipur, Rajasthan, India (On-Site) | Jul 2023 – Oct 2023</span
+          >
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Gained hands-on experience with Docker, Django REST Framework, AWS
+            (EC2, SES), and Slack bot automation. Contributed to backend APIs,
+            cloud deployment pipelines, and internal automation scripts.</span
+          >
+
+          <a href="https://www.brudite.com" target="_blank" class="btn-link"
+            >https://www.brudite.com</a
+          >
+        </div>
+
+        <div style="margin-top: 10px"></div>
+        <h1 class="title">Currently building</h1>
+        <div class="btn">
+          <span class="btn-title">Wosh</span>
+          <span class="btn-subtitle"
+            >A local first secret manager build using browser based
+            cryptography</span
+          >
+          <span
+            class="btn-subtitle"
+            style="margin-top: 10px; margin-bottom: 10px"
+            >Wosh is end to end encrypted, directly injects shared secrets into
+            your development environment, built on top of the browser
+            cryptography. All data is encrypted on client side in 7 hierarchical
+            levels.</span
+          >
+
+          <a href="https://woshvalut.xyz" target="_blank" class="btn-link"
+            >https://woshvalut.xyz</a
+          >
+        </div>
+        <div style="margin-top: 10px"></div>
+        <h1 class="title">Past work</h1>
+        <div class="btn">
+          <span class="btn-title">Proelevate - EduTech Platform</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Worked as a full stack developer to implement one on one mentorship
+            feature just like topmate</span
+          >
+          <a href="https://proelevate.in" target="_blank" class="btn-link"
+            >https://proelevate.in</a
+          >
+        </div>
+
+        <div style="margin-top: 10px"></div>
+        <h1 class="title">Side Projects (mostly never completed)</h1>
+        <div class="btn">
+          <span class="btn-title">Julia Portoflio</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Great use of gsap and framer motion. Designed and developed from
+            scratch</span
+          >
+          <a
+            href="https://julia-portoflio.vercel.app"
+            target="_blank"
+            class="btn-link"
+            >https://julia-portoflio.vercel.app</a
+          >
+        </div>
+        <div class="btn">
+          <span class="btn-title">Bytearoo - SaaS firm portfolio</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Cool website concept.</span
+          >
+          <a href="https://bytearoo.vercel.app" target="_blank" class="btn-link"
+            >https://bytearoo.vercel.app</a
+          >
+        </div>
+
+        <div class="btn">
+          <span class="btn-title">Proelevate - EduTech Platform</span>
+          <span class="btn-subtitle" style="margin-bottom: 10px"
+            >Worked as a full stack developer to implement one on one mentorship
+            feature just like topmate</span
+          >
+          <a href="https://proelevate.in" target="_blank" class="btn-link"
+            >https://proelevate.in</a
+          >
+        </div>
+
+        <div class="btn">
+          <span class="btn-subtitle">Check more projects on my GitHub</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/prashant-s29" target="_blank">GitHub</a>
+      <a href="https://x.com/prashant_gigs" target="_blank">Twitter</a>
+    </div>
+  </body>
+</html>
