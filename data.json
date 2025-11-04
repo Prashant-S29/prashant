@@ -1,0 +1,166 @@
+{
+  "intro": "Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and building cool things.",
+  "currentCompany": {
+    "companyName": "",
+    "role": "",
+    "desc": "",
+    "location": "",
+    "jobType": "",
+    "from": "",
+    "to": ""
+  },
+  "articles": [
+    {
+      "title": "Deploy NextJs on a VPS",
+      "desc": "This article covers all the steps to deploy a NextJs app on a VPS with Nginx and PM2.",
+      "link": "https://medium.com/@prashant.s2922/end-to-end-guide-for-properly-hosting-your-next-js-application-on-a-vps-81dad2e62b0f"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Wosh",
+      "desc": [
+        "A local first secret manager build using browser based cryptography",
+        "Wosh is end to end encrypted, directly injects shared secrets into your development environment, built on top of the browser cryptography. All data is encrypted on client side in 7 hierarchical levels."
+      ],
+      "liveLink": "https://woshvalut.xyz",
+      "github": "https://github.com/Prashant-S29/wosh-web",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
+      "name": "Proelevate - EduTech Platform",
+      "desc": [
+        "Collaborated with Arsh Goyal to build an online learning and job platform.",
+        "Majorly worked on Frontend, API integration, and documentation.",
+        "Developed a mentorship feature allowing mentors to book one-on-one sessions with students."
+      ],
+      "liveLink": "https://proelevate.in",
+      "github": "",
+      "isCurrent": false,
+      "isSideProject": false
+    },
+    {
+      "name": "Julia Portoflio",
+      "desc": [
+        "Great use of gsap and framer motion. Designed and developed from scratch"
+      ],
+      "liveLink": "https://julia-portoflio.vercel.app",
+      "github": "",
+      "isCurrent": false,
+      "isSideProject": true
+    }
+  ],
+  "archivedProjects": [
+    {
+      "name": "BlogNSpot",
+      "desc": [
+        "Developing a customized portfolio for Santoshi Swain – A Fashion Model, Artist, and Writer.",
+        "Features award-winning animations and interactions with great UI and seamless UX."
+      ],
+      "liveLink": "https://santoshi-portfolio.vercel.app",
+      "github": ""
+    },
+    {
+      "name": "Bytearoo - SaaS firm portfolio",
+      "desc": [
+        "Providing a full rebranding to a SaaS firm.",
+        "Smooth animation, mouse interactions and more"
+      ],
+      "liveLink": "https://bytearoo.vercel.app",
+      "github": "",
+      "isCurrent": false,
+      "isSideProject": false
+    },
+    {
+      "name": "Nagana Media Portfolio",
+      "desc": [
+        "Developing a minimalistic portfolio for Nagana Media - A SaaS firm.",
+        "The primary goal is to improve their online presence, credibility, and showcase their works."
+      ],
+      "liveLink": "https://naganamedia.com/",
+      "github": "",
+      "isCurrent": false,
+      "isSideProject": false
+    },
+    {
+      "name": "Medenure",
+      "desc": [
+        "Built a full-stack end-to-end eCommerce application.",
+        "Features include user management, inventory management, authentication, order tracking, cart, payment, and more."
+      ],
+      "liveLink": "https://medenure.vercel.app/",
+      "github": ""
+    },
+    {
+      "name": "Blog Website",
+      "desc": [
+        "Developed a personal blog website to showcase latest developments and designs."
+      ],
+      "liveLink": "https://www.code-components.in/",
+      "github": ""
+    }
+  ],
+  "experimentalProjects": [
+    {
+      "name": "Focusez - Productivity Chrome Extension",
+      "desc": [
+        "A modern productivity dashboard that replaces your new tab with a beautiful, customizable workspace featuring task management, focus timers, motivational quotes, and quick bookmarks."
+      ],
+      "liveLink": "",
+      "github": "https://github.com/Dhruv107ag/gdg-team1"
+    },
+    {
+      "name": "Experimental Lab",
+      "desc": [
+        "This is like the dump yard of all my creative stuff, here I put my recreations (majorly inspired from Twitter)."
+      ],
+      "liveLink": "https://experiments-by-prashant.vercel.app/",
+      "github": ""
+    },
+    {
+      "name": "Soner",
+      "desc": [
+        "I made this to pitch my web app idea at a tech fest at VIT, Andhra Pradesh (still working on it)."
+      ],
+      "liveLink": "https://soner-idea-pitching.vercel.app",
+      "github": ""
+    }
+  ],
+  "pastExperience": [
+    {
+      "companyName": "CodeDecoders",
+      "role": "Software Engineer",
+      "desc": "Worked as a Full Stack Typescript developer for a Fintech Startup. Worked alongside the CTO to develop the Web3 based Global Payment System. Got handson experience on FIAT to crypto conversions, transactions and more.",
+      "location": "Ahmedabad, Gujrat, India",
+      "jobType": "On-Site",
+      "from": "July 2025",
+      "to": "September 2025",
+      "website": "https://codedecoders.io"
+    },
+    {
+      "companyName": "SinonTechs",
+      "role": "Full Stack Web Developer",
+      "desc": "Developed full stack web applications for international clients using T3 Stack and AWS services. Engaged in client communication to deliver high-impact and scalable web solutions tailored to business goals. Integrated analytics and campaign systems using PostHog and custom CMS platforms.",
+      "location": "Ahmedabad, Gujrat, India",
+      "jobType": "On-Site",
+      "from": "Mar 2025",
+      "to": "July 2025",
+      "website": "https://www.sinontechs.com"
+    },
+    {
+      "companyName": "Brudite",
+      "role": "Associate Software Intern",
+      "desc": "Gained hands-on experience with Docker, Django REST Framework, AWS (EC2, SES), and Slack bot automation. Contributed to backend APIs, cloud deployment pipelines, and internal automation scripts.",
+      "location": "Jaipur, Rajasthan, India",
+      "jobType": "On-Site",
+      "from": "Jul 2023",
+      "to": "Oct 2023",
+      "website": "https://www.brudite.com"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/prashant-s29",
+    "twitter": "https://x.com/prashant_gigs"
+  }
+}

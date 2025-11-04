@@ -44,7 +44,7 @@
       .buttons {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 0;
         margin-bottom: 40px;
       }
 
@@ -92,22 +92,49 @@
         color: #e0e0e0;
       }
 
-      .theme-toggle {
-        background: none;
-        border: none;
-        color: #999;
-        cursor: pointer;
-        font-size: 1.2rem;
-        transition: color 0.3s ease;
-      }
-
-      .theme-toggle:hover {
-        color: #e0e0e0;
-      }
-
       .title {
         font-size: 16px;
         font-weight: normal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .title.non-collapsible {
+        cursor: default;
+      }
+
+      .chevron {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
+      }
+
+      .chevron.rotated {
+        transform: rotate(180deg);
+      }
+
+      .collapsible-content {
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        max-height: 0;
+        opacity: 0;
+      }
+
+      .collapsible-content.expanded {
+        max-height: 5000px;
+        opacity: 1;
+      }
+
+      .section-gap {
+        margin-top: 40px;
+      }
+
+      .item-gap {
+        margin-top: 20px;
       }
 
       .btn-link {
@@ -116,6 +143,12 @@
         font-size: 0.85rem;
         transition: color 0.3s ease;
         margin-top: 10px;
+        padding-right: 20px;
+        display: inline-block;
+      }
+
+      .github-link {
+        text-align: center;
       }
 
       @media (max-width: 480px) {
@@ -137,168 +170,344 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>
-          Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and
-          building cool things.
-        </h1>
+        <h1 id="intro"></h1>
       </div>
 
-      <div class="buttons">
-        <h1 class="title">Currently working with</h1>
-        <div class="btn">
-          <span class="btn-subtitle">404</span>
-        </div>
-
-        <div style="margin-top: 10px"></div>
-
-        <h1 class="title">Useful Reads</h1>
-        <div class="btn">
-          <span class="btn-title">Deploy NextJs on a VPS</span>
-
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >This article covers all the steps to deploy a NextJs app on a VPS
-            with Nginx and PM2.</span
-          >
-
-          <a href="https://codedecoders.io" target="_blank" class="btn-link"
-            >https://medium.com/@prashant.s2922/end-to-end-guide-for-properly-hosting-your-next-js-application-on-a-vps-81dad2e62b0f</a
-          >
-        </div>
-
-        <div style="margin-top: 10px"></div>
-
-        <h1 class="title">Currently building</h1>
-        <div class="btn">
-          <span class="btn-title">Wosh</span>
-          <span class="btn-subtitle"
-            >A local first secret manager build using browser based
-            cryptography</span
-          >
-          <span
-            class="btn-subtitle"
-            style="margin-top: 10px; margin-bottom: 10px"
-            >Wosh is end to end encrypted, directly injects shared secrets into
-            your development environment, built on top of the browser
-            cryptography. All data is encrypted on client side in 7 hierarchical
-            levels.</span
-          >
-
-          <a href="https://woshvalut.xyz" target="_blank" class="btn-link"
-            >https://woshvalut.xyz</a
-          >
-        </div>
-        <div style="margin-top: 10px"></div>
-
-        <h1 class="title">Past Experience</h1>
-        <div class="btn">
-          <span class="btn-title">Software Engineer - CodeDecoders</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Ahmedabad, Gujrat, India (On-Site) | July 2025 - September
-            2025</span
-          >
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Worked as a Full Stack Typescript developer for a Fintech Startup.
-            Worked alongside the CTO to develop the Web3 based Global Payment
-            System. Got handson experience on FIAT to crypto conversions,
-            transactions and more.</span
-          >
-
-          <a href="https://codedecoders.io" target="_blank" class="btn-link"
-            >https://codedecoders.io</a
-          >
-        </div>
-        <div class="btn">
-          <span class="btn-title">Full Stack Web Developer - SinonTechs</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Ahmedabad, Gujrat, India (On-Site) | Mar 2025 - July 2025</span
-          >
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Developed full stack web applications for international clients
-            using T3 Stack and AWS services. Engaged in client communication to
-            deliver high-impact and scalable web solutions tailored to business
-            goals. Integrated analytics and campaign systems using PostHog and
-            custom CMS platforms.</span
-          >
-
-          <a href="https://www.sinontechs.com" target="_blank" class="btn-link"
-            >https://www.sinontechs.com</a
-          >
-        </div>
-
-        <div class="btn">
-          <span class="btn-title">Associate Software Intern - Brudite</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Jaipur, Rajasthan, India (On-Site) | Jul 2023 – Oct 2023</span
-          >
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Gained hands-on experience with Docker, Django REST Framework, AWS
-            (EC2, SES), and Slack bot automation. Contributed to backend APIs,
-            cloud deployment pipelines, and internal automation scripts.</span
-          >
-
-          <a href="https://www.brudite.com" target="_blank" class="btn-link"
-            >https://www.brudite.com</a
-          >
-        </div>
-
-        <div style="margin-top: 10px"></div>
-        <h1 class="title">Past work</h1>
-        <div class="btn">
-          <span class="btn-title">Proelevate - EduTech Platform</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Worked as a full stack developer to implement one on one mentorship
-            feature just like topmate</span
-          >
-          <a href="https://proelevate.in" target="_blank" class="btn-link"
-            >https://proelevate.in</a
-          >
-        </div>
-
-        <div style="margin-top: 10px"></div>
-        <h1 class="title">Side Projects (mostly never completed)</h1>
-        <div class="btn">
-          <span class="btn-title">Julia Portoflio</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Great use of gsap and framer motion. Designed and developed from
-            scratch</span
-          >
-          <a
-            href="https://julia-portoflio.vercel.app"
-            target="_blank"
-            class="btn-link"
-            >https://julia-portoflio.vercel.app</a
-          >
-        </div>
-        <div class="btn">
-          <span class="btn-title">Bytearoo - SaaS firm portfolio</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Cool website concept.</span
-          >
-          <a href="https://bytearoo.vercel.app" target="_blank" class="btn-link"
-            >https://bytearoo.vercel.app</a
-          >
-        </div>
-
-        <div class="btn">
-          <span class="btn-title">Proelevate - EduTech Platform</span>
-          <span class="btn-subtitle" style="margin-bottom: 10px"
-            >Worked as a full stack developer to implement one on one mentorship
-            feature just like topmate</span
-          >
-          <a href="https://proelevate.in" target="_blank" class="btn-link"
-            >https://proelevate.in</a
-          >
-        </div>
-
-        <div class="btn">
-          <span class="btn-subtitle">Check more projects on my GitHub</span>
-        </div>
-      </div>
+      <div class="buttons" id="content"></div>
     </div>
 
-    <div class="footer">
-      <a href="https://github.com/prashant-s29" target="_blank">GitHub</a>
-      <a href="https://x.com/prashant_gigs" target="_blank">Twitter</a>
-    </div>
+    <div class="footer" id="footer"></div>
+
+    <script>
+      function toggleSection(sectionId) {
+        const content = document.getElementById(sectionId);
+        const chevron = document.querySelector(`[data-section="${sectionId}"]`);
+
+        content.classList.toggle('expanded');
+        chevron.classList.toggle('rotated');
+      }
+
+      function createChevronIcon(isExpanded = false) {
+        return `<svg class="chevron ${
+          isExpanded ? 'rotated' : ''
+        }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>`;
+      }
+
+      async function loadPortfolio() {
+        try {
+          const response = await fetch('data.json');
+          const data = await response.json();
+
+          document.getElementById('intro').textContent = data.intro;
+
+          const content = document.getElementById('content');
+          let html = '';
+
+          html += `<h1 class="title non-collapsible">Currently working with</h1>`;
+          if (data.currentCompany.companyName) {
+            html += `<div class="item-gap"></div>`;
+            html += `
+              <div class="btn">
+                <span class="btn-title">${data.currentCompany.role} - ${
+              data.currentCompany.companyName
+            }</span>
+                <span class="btn-subtitle" style="margin-bottom: 10px">${
+                  data.currentCompany.location
+                } (${data.currentCompany.jobType}) | ${
+              data.currentCompany.from
+            }${
+              data.currentCompany.to ? ' - ' + data.currentCompany.to : ''
+            }</span>
+                <span class="btn-subtitle">${data.currentCompany.desc}</span>
+              </div>
+            `;
+          } else {
+            html += `<div class="item-gap"></div>`;
+            html += `
+              <div class="btn">
+                <span class="btn-subtitle">404</span>
+              </div>
+            `;
+          }
+
+          if (data.articles && data.articles.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = data.articles.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('articles-content')">
+                  Useful Reads
+                  <span data-section="articles-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="articles-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Useful Reads</h1>`;
+            }
+
+            data.articles.forEach((article, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `
+                <div class="btn">
+                  <span class="btn-title">${article.title}</span>
+                  <span class="btn-subtitle" style="margin-bottom: 10px">${article.desc}</span>
+                  <a href="${article.link}" target="_blank" class="btn-link">${article.link}</a>
+                </div>
+              `;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          const currentProjects = data.projects.filter((p) => p.isCurrent);
+          if (currentProjects.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            html += `<h1 class="title non-collapsible">Currently building</h1>`;
+
+            currentProjects.forEach((project, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `<div class="btn">`;
+              html += `<span class="btn-title">${project.name}</span>`;
+              project.desc.forEach((desc, descIndex) => {
+                html += `<span class="btn-subtitle"${
+                  descIndex > 0
+                    ? ' style="margin-top: 10px; margin-bottom: 10px"'
+                    : ''
+                }>${desc}</span>`;
+              });
+              if (project.liveLink) {
+                html += `<a href="${project.liveLink}" target="_blank" class="btn-link">${project.liveLink}</a>`;
+              }
+              if (project.github) {
+                html += `<a href="${project.github}" target="_blank" class="btn-link">${project.github}</a>`;
+              }
+              html += `</div>`;
+            });
+          }
+
+          if (data.pastExperience && data.pastExperience.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = data.pastExperience.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('experience-content')">
+                  Past Experience
+                  <span data-section="experience-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="experience-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Past Experience</h1>`;
+            }
+
+            data.pastExperience.forEach((exp, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `
+                <div class="btn">
+                  <span class="btn-title">${exp.role} - ${
+                exp.companyName
+              }</span>
+                  <span class="btn-subtitle" style="margin-bottom: 10px">${
+                    exp.location
+                  } (${exp.jobType}) | ${exp.from} - ${exp.to}</span>
+                  <span class="btn-subtitle" style="margin-bottom: 10px">${
+                    exp.desc
+                  }</span>
+                  ${
+                    exp.website
+                      ? `<a href="${exp.website}" target="_blank" class="btn-link">${exp.website}</a>`
+                      : ''
+                  }
+                </div>
+              `;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          const pastWork = data.projects.filter(
+            (p) => !p.isCurrent && !p.isSideProject,
+          );
+          if (pastWork.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = pastWork.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('pastwork-content')">
+                  Past work
+                  <span data-section="pastwork-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="pastwork-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Past work</h1>`;
+            }
+
+            pastWork.forEach((project, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `<div class="btn">`;
+              html += `<span class="btn-title">${project.name}</span>`;
+              project.desc.forEach((desc, descIndex) => {
+                html += `<span class="btn-subtitle" style="margin-bottom: 10px">${desc}</span>`;
+              });
+              if (project.liveLink) {
+                html += `<a href="${project.liveLink}" target="_blank" class="btn-link">${project.liveLink}</a>`;
+              }
+              if (project.github) {
+                html += `<a href="${project.github}" target="_blank" class="btn-link">${project.github}</a>`;
+              }
+              html += `</div>`;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          const sideProjects = data.projects.filter((p) => p.isSideProject);
+          if (sideProjects.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = sideProjects.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('sideprojects-content')">
+                  Side Projects (mostly never completed)
+                  <span data-section="sideprojects-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="sideprojects-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Side Projects (mostly never completed)</h1>`;
+            }
+
+            sideProjects.forEach((project, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `<div class="btn">`;
+              html += `<span class="btn-title">${project.name}</span>`;
+              project.desc.forEach((desc, descIndex) => {
+                html += `<span class="btn-subtitle" style="margin-bottom: 10px">${desc}</span>`;
+              });
+              if (project.liveLink) {
+                html += `<a href="${project.liveLink}" target="_blank" class="btn-link">${project.liveLink}</a>`;
+              }
+              if (project.github) {
+                html += `<a href="${project.github}" target="_blank" class="btn-link">${project.github}</a>`;
+              }
+              html += `</div>`;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          if (
+            data.experimentalProjects &&
+            data.experimentalProjects.length > 0
+          ) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = data.experimentalProjects.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('experimental-content')">
+                  Experimental Projects
+                  <span data-section="experimental-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="experimental-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Experimental Projects</h1>`;
+            }
+
+            data.experimentalProjects.forEach((project, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `<div class="btn">`;
+              html += `<span class="btn-title">${project.name}</span>`;
+              project.desc.forEach((desc, descIndex) => {
+                html += `<span class="btn-subtitle" style="margin-bottom: 10px">${desc}</span>`;
+              });
+              if (project.liveLink) {
+                html += `<a href="${project.liveLink}" target="_blank" class="btn-link">${project.liveLink}</a>`;
+              }
+              if (project.github) {
+                html += `<a href="${project.github}" target="_blank" class="btn-link">${project.github}</a>`;
+              }
+              html += `</div>`;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          if (data.archivedProjects && data.archivedProjects.length > 0) {
+            html += `<div class="section-gap"></div>`;
+            const isMultiple = data.archivedProjects.length > 1;
+
+            if (isMultiple) {
+              html += `
+                <h1 class="title" onclick="toggleSection('archived-content')">
+                  Archived
+                  <span data-section="archived-content">${createChevronIcon(
+                    false,
+                  )}</span>
+                </h1>
+                <div id="archived-content" class="collapsible-content">
+              `;
+            } else {
+              html += `<h1 class="title non-collapsible">Archived</h1>`;
+            }
+
+            data.archivedProjects.forEach((project, index) => {
+              html += `<div class="item-gap"></div>`;
+              html += `<div class="btn">`;
+              html += `<span class="btn-title">${project.name}</span>`;
+              project.desc.forEach((desc, descIndex) => {
+                html += `<span class="btn-subtitle" style="margin-bottom: 10px">${desc}</span>`;
+              });
+              if (project.liveLink) {
+                html += `<a href="${project.liveLink}" target="_blank" class="btn-link">${project.liveLink}</a>`;
+              }
+              if (project.github) {
+                html += `<a href="${project.github}" target="_blank" class="btn-link">${project.github}</a>`;
+              }
+              html += `</div>`;
+            });
+
+            if (isMultiple) html += `</div>`;
+          }
+
+          html += `<div class="section-gap"></div>`;
+          html += `
+            <div class="btn github-link">
+              <span class="btn-subtitle">Check more projects on my GitHub</span>
+            </div>
+          `;
+
+          content.innerHTML = html;
+
+          const footer = document.getElementById('footer');
+          footer.innerHTML = `
+            <a href="${data.social.github}" target="_blank">GitHub</a>
+            <a href="${data.social.twitter}" target="_blank">Twitter</a>
+          `;
+        } catch (error) {
+          console.error('Error loading portfolio data:', error);
+        }
+      }
+
+      loadPortfolio();
+    </script>
   </body>
 </html>
