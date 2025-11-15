@@ -18,6 +18,18 @@
   ],
   "projects": [
     {
+      "name": "BetterSox (under-dev)",
+      "desc": [
+        "Find best open source projects in natural language",
+        "BetterSox helps you find open source projects in natural language. It uses a combination of NLP and LLMs to provide relevant results.",
+        "Its free-forever with no signups required."
+      ],
+      "liveLink": "https://bettersox.vercel.app",
+      "github": "",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
       "name": "Wosh",
       "desc": [
         "A local first secret manager build using browser based cryptography",
