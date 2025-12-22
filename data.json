@@ -1,13 +1,13 @@
 {
   "intro": "Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and building cool things.",
   "currentCompany": {
-    "companyName": "",
-    "role": "",
-    "desc": "",
-    "location": "",
-    "jobType": "",
-    "from": "",
-    "to": ""
+    "companyName": "Heizen",
+    "role": "Software Engineer",
+    "desc": "Breaking and Building",
+    "location": "Hyderabad",
+    "jobType": "Full Time",
+    "from": "December 12, 2025",
+    "to": "Present"
   },
   "articles": [
     {
@@ -18,7 +18,15 @@
   ],
   "projects": [
     {
-      "name": "BetterSox (under-dev)",
+      "name": "ts-orm-bench",
+      "desc": ["A tool to benchmark various typescript ORMs"],
+      "liveLink": "https://ts-orm-bench.vercel.app",
+      "github": "https://github.com/prashant-s29/ts-orm-bench",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
+      "name": "BetterSox",
       "desc": [
         "Find best open source projects in natural language",
         "BetterSox helps you find open source projects in natural language. It uses a combination of NLP and LLMs to provide relevant results.",
@@ -37,7 +45,7 @@
       ],
       "liveLink": "https://woshvalut.xyz",
       "github": "https://github.com/Prashant-S29/wosh-web",
-      "isCurrent": true,
+      "isCurrent": false,
       "isSideProject": false
     },
     {
