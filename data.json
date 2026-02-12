@@ -1,13 +1,13 @@
 {
   "intro": "Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and building cool things.",
   "currentCompany": {
-    "companyName": "Heizen",
-    "role": "Software Engineer",
-    "desc": "Breaking and Building",
-    "location": "Hyderabad",
-    "jobType": "Full Time",
-    "from": "December 12, 2025",
-    "to": "Present"
+    "companyName": "",
+    "role": "",
+    "desc": "",
+    "location": "",
+    "jobType": "",
+    "from": "",
+    "to": ""
   },
   "articles": [
     {
@@ -148,6 +148,16 @@
     }
   ],
   "pastExperience": [
+     {
+      "companyName": "Heizen",
+      "role": "Software Engineer",
+      "desc": "Worked in a high paced environment with best AI integration toolkit to help shipping faster and most reliable softwares.",
+      "location": "Hyderabad, India",
+      "jobType": "Remote",
+      "from": "December 2025",
+      "to": "February 2026",
+      "website": "https://heizen.work"
+    },
     {
       "companyName": "CodeDecoders",
       "role": "Software Engineer",
