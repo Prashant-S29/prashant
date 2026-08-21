@@ -1,13 +1,13 @@
 {
-  "intro": "Hi, I'm Prashant Singh. 20yrs. Dropout. Sitting on my couch and building cool things.",
+  "intro": "Hi, I'm Prashant Singh. 21yrs. Dropout. Sitting on my couch and building cool things.",
   "currentCompany": {
-    "companyName": "",
-    "role": "",
-    "desc": "",
-    "location": "",
-    "jobType": "",
-    "from": "",
-    "to": ""
+    "companyName": "Saleshandy",
+    "role": "SDE 1",
+    "desc": "just burning tokens",
+    "location": "Ahmedabad, Gujrat, India",
+    "jobType": "On-Site",
+    "from": "May 2026",
+    "to": "present"
   },
   "articles": [
     {
