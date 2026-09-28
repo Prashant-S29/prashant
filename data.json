@@ -19,18 +19,38 @@
       "isSideProject": false
     },
     {
-      "name": "SimpleCMS",
-      "desc": ["A simple CMS builder for my freelance projects"],
-      "liveLink": "https://simple-cms-silk.vercel.app",
-      "github": "https://github.com/Prashant-S29/simple_cms",
-      "isCurrent": true,
-      "isSideProject": false
-    },
-    {
       "name": "ts-orm-bench",
       "desc": ["A tool to benchmark various typescript ORMs"],
       "liveLink": "https://ts-orm-bench.vercel.app",
       "github": "https://github.com/prashant-s29/ts-orm-bench",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
+      "name": "Debt Colletion Voice Agent",
+      "desc": [
+        "A demo of a niche specific agent orchestration pipeline. Automate debt collection procedure with self learning loop"
+      ],
+      "liveLink": "",
+      "github": "https://github.com/Prashant-S29/post_default_debt_collections_system",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
+      "name": "A Multi-Channel Scheduling Coordinator",
+      "desc": [
+        "Coordinates meetings across Email and SMS channels with intelligent cross-thread, cross-channel memory retrieval"
+      ],
+      "liveLink": "",
+      "github": "https://github.com/Prashant-S29/Sweetie",
+      "isCurrent": true,
+      "isSideProject": false
+    },
+    {
+      "name": "SimpleCMS",
+      "desc": ["A simple CMS builder for my freelance projects"],
+      "liveLink": "https://simple-cms-silk.vercel.app",
+      "github": "https://github.com/Prashant-S29/simple_cms",
       "isCurrent": true,
       "isSideProject": false
     },
